@@ -43,16 +43,15 @@
     
     <!-- Firebase Configuration -->
     <script>
-        // Firebase configuration provided by the user
         const firebaseConfig = {
-          apiKey: "AIzaSyAq805s0c0FB_ZvErRi04x2GNKtZrJEax0",
-          authDomain: "trafficcounting-40188.firebaseapp.com",
-          databaseURL: "https://trafficcounting-40188-default-rtdb.firebaseio.com",
-          projectId: "trafficcounting-40188",
-          storageBucket: "trafficcounting-40188.appspot.com",
-          messagingSenderId: "381516932669",
-          appId: "1:381516932669:web:8e6d2c14621e8aed25ec54",
-          measurementId: "G-13HY42P1NZ"
+            apiKey: "AIzaSyAq805s0c0FB_ZvErRi04x2GNKtZrJEax0",
+            authDomain: "trafficcounting-40188.firebaseapp.com",
+            databaseURL: "https://trafficcounting-40188-default-rtdb.firebaseio.com",
+            projectId: "trafficcounting-40188",
+            storageBucket: "trafficcounting-40188.appspot.com",
+            messagingSenderId: "381516932669",
+            appId: "1:381516932669:web:8e6d2c14621e8aed25ec54",
+            measurementId: "G-13HY42P1NZ"
         };
 
         // Initialize Firebase
@@ -69,7 +68,6 @@
             const detail = document.getElementById("detail").value;
 
             try {
-                // Simpan data ke Firestore
                 await db.collection('pengajuan').add({
                     nama: nama,
                     perusahaan: perusahaan,
